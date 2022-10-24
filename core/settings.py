@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'channels',
-    
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -70,6 +70,8 @@ TEMPLATES = [
         },
     },
 ]
+
+ASGI_APPLICATION = "core.asgi.application"
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
